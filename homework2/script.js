@@ -60,7 +60,20 @@ console.log(newArr)
 
 // 4. Описать массив из объектов с двумя полями: строковым и числовым. Пройти в цикле по массиву и вывести строковое поле каждого объекта, если его числовое поле больше 10.
 
-w
+const mixedArr = [
+  { string: 'Пять', number: 5 },
+  { string: 'Восемь', number: 8 },
+  { string: 'Одиннадцать', number: 11 },
+  { string: 'Двадцать', number: 20 },
+  { string: 'Один', number: 1 },
+  { string: 'Тридцать три', number: 33 },
+  { string: 'Двадцать один', number: 21 },
+]
+
+for (let item of mixedArr) {
+    if (item.number > 10)
+    console.log(item.string)
+}
 
 // 5. Задать массив слов. В цикле сформировать массив объектов с ключами word (само слово), length (длина слова)
 
