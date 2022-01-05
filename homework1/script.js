@@ -56,28 +56,23 @@ alert(firstNum + secondNum + thirdNum)
 // Используем цикл for. 
 
 // вариант 1
-let numberFactorial = 4
+const numberFactorial = 4
 let factorial = 1
+
 for (let i = 1; i <= numberFactorial; i++) {
    factorial = factorial * i
 }
 alert(factorial)
 
 // вариант 2
-let numberFactorial = 4
-for (let i = 1; i <= numberFactorial; i++) {
-   numberFactorial = numberFactorial * i
-}
-alert(numberFactorial)
 
-// почему не работает Вариант 1 в обратном порядке?
-// Это конечно не тот просчет, что нам нужен, но почему не работает вообще, не выдет 54? 
+const numberFactorial = 4
+let factorial = 1
 
-let numberFactorial = 4
-for (let i = numberFactorial - 1; i >= 1; i--) {
-   numberFactorial = numberFactorial * i
+for (let i = numberFactorial; i >= 1; i--) {
+   factorial = factorial * i
 }
-alert(numberFactorial)
+alert(factorial)
 
 
 // 5) Напишите цикл, который предлагает prompt ввести число, большее 100. 
