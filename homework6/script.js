@@ -35,22 +35,19 @@ buttonElement.onclick = () => {
 // Иконки можно свои.
 
 
-const buttonBurger = document.querySelector('.get-menu')
+const buttonBurger = document.querySelector('#get-menu')
 const elementMenu = document.querySelector('#menu')
 
+function switchButton(event) {
+    const isShown = elementMenu.classList.contains('show')
+    if (isShown) {
+        elementMenu.classList.remove('show') & buttonBurger.classList.replace('close-menu', 'get-menu')
+    } else {
+        elementMenu.classList.add('show') & buttonBurger.classList.replace('get-menu', 'close-menu')
+    }
+}
 
-buttonBurger.addEventListener('click', () => {
-    elementMenu.classList.add('show')
-    buttonBurger.classList.replace('get-menu', 'close-menu')
-
-    const buttonClose = document.querySelector('.close-menu')
-
-    buttonClose.addEventListener('click', () => {
-        elementMenu.classList.remove('show')
-        buttonBurger.classList.replace('close-menu', 'get-menu')
-    })
-
-})
+buttonBurger.addEventListener('click', switchButton)
 
 
 // 3. Сделать модальное окно. При клике на кнопку показываем окно (содержание любое), в правом верхнем углу кнопка "Х", которая закрывает модальное окно. Пример: https://getbootstrap.com/docs/5.0/components/modal/
