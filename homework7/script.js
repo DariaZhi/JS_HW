@@ -49,12 +49,13 @@ document.body.append(resultFieldElement)
 
 calcFormElement.addEventListener('submit', calcExprForm)
 
+
 function calcExprForm(event) {
     event.preventDefault()
 
-    const { value: operator } = operationElement
-    const firstNumber = +firstNumElement.value
-    const secondNumber = +secondNumElement.value
+    const operator = operationElement.value
+    const firstNumber = +firstNum.value
+    const secondNumber = +secondNum.value
     let result = 0
 
     switch (operator) {
@@ -71,6 +72,7 @@ function calcExprForm(event) {
             result = firstNumber * secondNumber
             break
     }
+
 
     resultFieldElement.textContent = result
 }
