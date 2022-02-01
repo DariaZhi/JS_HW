@@ -62,13 +62,13 @@ function calcExprForm(event) {
             result = firstNumber + secondNumber
             break
         case '-':
-            result = firstNum - secondNum
+            result = firstNumber - secondNumber
             break
         case '/':
-            result = firstNum / secondNum
+            result = firstNumber / secondNumber
             break
         case 'x':
-            result = firstNum * secondNum
+            result = firstNumber * secondNumber
             break
     }
 
