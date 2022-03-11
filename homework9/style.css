@@ -1,0 +1,71 @@
+body {
+    background: url(./background.jpg);
+    padding: 1rem;
+}
+
+.island__item {
+    color: white;
+    font-weight: 500;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    order: 1;
+}
+
+
+.island+.island {
+    margin-top: 1rem;
+}
+
+.island__item_checked {
+    order: 2;
+}
+ 
+.island__item_checked label{
+    text-decoration: line-through;
+    color: aqua;
+}
+
+.btn {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.form-control {
+    border: none;
+}
+
+
+.form-check-input {
+    min-width: 1em;
+}
+
+
+.form-select {
+    width: 130px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-border: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: white;
+    padding-right: 10px;
+}
+
+.estimate {
+    width: 65px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 16px;
+}
+
+.estimate::placeholder {
+    color: white;
+    font-size: 12px;
+}
+
+.estimate::-webkit-inner-spin-button {
+    opacity: 0.4;
+}
