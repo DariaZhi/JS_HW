@@ -18,7 +18,12 @@ window.addEventListener('beforeunload', () => {
 }
 )
 
-document.addEventListener('DOMContentLoaded', () => render())
+document.addEventListener('DOMContentLoaded', () => {
+    console.log(data)
+    const string = JSON.stringify(data)
+    console.log(string)
+    render()
+})
 
 
 function handleSubmitFormCreate(event) {
